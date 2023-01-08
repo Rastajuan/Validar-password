@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="validarContraseña.css">
+</head>
+<body>
+    <input type="text" id="password" placeholder="Introduce tu contraseña">
+    <img src="icono_correcto.png" id="tip0-icon" class="hidden">
+<div id="tip1">
+  Entre 8 y 16 caracteres y sin espacios en blanco
+  <img src="icono_error.png" id="tip1-icon" class="hidden">
+</div>
+
+<div id="tip2" >Al menos una mayúscula
+    <img src="icono_error.png" id="tip2-icon" class="hidden">
+</div>
+<div id="tip3" >Al menos una minúscula
+    <img src="icono_error.png" id="tip3-icon" class="hidden">
+</div>
+<div id="tip4" >Al menos un número
+    <img src="icono_error.png" id="tip4-icon" class="hidden">
+</div>
+<div id="tip5" >Al menos un carácter especial (!@#$%^&*)
+    <img src="icono_error.png" id="tip5-icon" class="hidden">
+</div>
+
+<div id="password-valid"></div>
+
+<script src="validarContraseña.js"></script>
+</body>
+</html>
