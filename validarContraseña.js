@@ -118,7 +118,7 @@ password.addEventListener("input", function () {
     document.getElementById("tip4-icon").src = "";
     document.getElementById("tip5-icon").src = "";
     document.getElementById("tip0-icon").classList.remove("hidden");
-    // password.classList.add("valid"); // Agrega la clase valid al input de contraseña
+    // password.src="icono_correcto.png"
   }
   else {
     document.getElementById("tip0-icon").classList.add("hidden"); // Oculta el icono de contraseña válida
