@@ -1,35 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Validación de contraseña</title>
-    <link rel="stylesheet" href="validarContraseña.css">
-</head>
-<body>
-    <input type="text" id="password" placeholder="Introduce tu contraseña">
-    <img src="icono_correcto.png" id="tip0-icon" class="hidden">
-<div id="tip1">
-  Entre 8 y 16 caracteres y sin espacios en blanco
-  <img src="icono_error.png" id="tip1-icon" class="hidden">
-</div>
+    <link rel="stylesheet" href="validarContraseña.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <input type="text" id="password" placeholder="Introduce tu contraseña" />
+    <img src="icono_correcto.png" id="tip0-icon" class="hidden" />
+    <div id="tip1">
+      Entre 8 y 16 caracteres y sin espacios en blanco
+      <img src="icono_error.png" id="tip1-icon" class="hidden" />
+    </div>
 
-<div id="tip2" >Al menos una mayúscula
-    <img src="icono_error.png" id="tip2-icon" class="hidden">
-</div>
-<div id="tip3" >Al menos una minúscula
-    <img src="icono_error.png" id="tip3-icon" class="hidden">
-</div>
-<div id="tip4" >Al menos un número
-    <img src="icono_error.png" id="tip4-icon" class="hidden">
-</div>
-<div id="tip5" >Al menos un carácter especial (!@#$%^&*)
-    <img src="icono_error.png" id="tip5-icon" class="hidden">
-</div>
+    <div id="tip2">
+      Al menos una mayúscula
+      <img src="icono_error.png" id="tip2-icon" class="hidden" />
+    </div>
+    <div id="tip3">
+      Al menos una minúscula
+      <img src="icono_error.png" id="tip3-icon" class="hidden" />
+    </div>
+    <div id="tip4">
+      Al menos un número
+      <img src="icono_error.png" id="tip4-icon" class="hidden" />
+    </div>
+    <div id="tip5">
+      Al menos un carácter especial (!@#$%^&*)
+      <img src="icono_error.png" id="tip5-icon" class="hidden" />
+    </div>
 
-<div id="password-valid"></div>
+    <div id="password-valid"></div>
+    <hr><hr>
 
-<script src="validarContraseña.js"></script>
-</body>
+    <!-- ESTILO DEL PROYECTO -->
+    <div class="col-12 input-group mb-3">
+      <div class="col-12 form-floating">
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          name="password"
+          placeholder="Contraseña"
+        />
+        <label for="contrasena">Contraseña:</label>
+      </div>
+      <button
+        type="button"
+        id="mostraOcultar"
+        class="input-group-text"
+        name="mostraOcultar"
+        value="mostraOcultar"
+      >
+        <i class="bi bi-eye-fill"></i>
+      </button>
+    </div>
+
+    <script src="validarContraseña.js"></script>
+  </body>
 </html>
